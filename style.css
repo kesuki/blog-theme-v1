@@ -1,0 +1,198 @@
+/*
+Theme Name: mak-theme
+Theme URI: http://www.mak-blog.com/
+Author: Mai.Songtao
+Author URI: http://www.mak-blog.com/
+Description: The original WordPress theme that graced versions 3.04 and prior.
+Version: 4.0
+License: GNU General Public License
+*/
+/* RESET */
+*{margin:0;padding:0;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,
+q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,
+tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,
+video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}
+/* BASIC */
+body{background: #FAFAFA;color:#444;text-align:center;font-size:12px;font-family:"Microsoft Yahei","Century Gothic","Lucida Grande",Verdana,Tahoma,Arial;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;}
+h1{font-size:24px;line-height:30px;}
+h2{font-size:20px;line-height:26px;}
+h3{font-size:16px;line-height:24px;}
+h4{font-size:14px;line-height:20px;}
+h5{font-size:14px;line-height:20px;}
+h6{font-size:14px;line-height:20px;}
+small{font-size:10px;line-height:16px;}
+dl{font-size:12px;}
+dt{font-weight:bold;}
+a{color: #004276;text-decoration:none;outline:none;}
+a:hover{color:#CA0002;}
+fieldset,img{border:none;}
+hr{color:#bfbebe;height:1px;border:0px;}
+input, textarea {border: 1px #CCC solid;outline: none;}
+ol, ul, li {list-style: none;}
+.left {float: left;}
+.right {float: right;}
+.hidden{display:none;}
+.clear{clear:both;margin:0;padding:0;}
+
+#container {margin: 0 auto; width: auto; text-align: center; min-width: 945px;}
+
+/*=== header ===*/
+/* header */
+#header {background: #CA0002; height: 125px;}
+#z-loading {background: #DFDFDF;height: 6px;}
+#hdr-main {position:relative; width:945px; margin: 0 auto; }
+#hdr-wrap {padding-top:15px;}
+/* pages_nav */
+#hdr-nav {position: absolute; top: 0; left: 0;}
+#hdr-nav a { position: relative; top: 7px; font-weight:bold; color: white; cursor:pointer;}
+#hdr-nav li { font-size: 12px; float: left; height: 28px; border-right: 1px solid #F99; padding: 0 10px; color: white;}
+/* motto */
+#motto{position: absolute; top: 0; right: 0; padding: 6px 0px 0px 0px;font-size:10px; width:300px;}
+#motto span {margin:0; padding:0;float: right;}
+#motto a {color:white;}
+/* searchform */
+#searchform{position: absolute; right: 5px; top: 90px;}
+#searchform input{width: 188px; height: 24px; line-height: 24px; vertical-align: middle; padding: 0 5px; border: 0 none;}
+
+/* main */
+#main {margin:0 auto; padding:5px 0; width:945px; }
+#primary { float:left; width:620px; padding:0; text-align:left;}
+#secondary { float:right; width:325px; padding:0; text-align:left;}
+/*=== primary ===*/
+.boxheader, .boxfooter, .widgetheader, .widgetfooter {height: 6px; overflow: hidden; background: transparent url(images/shades.gif) top left no-repeat;}
+.boxheader {background-position: 0 -39px;}
+.widgetheader {background-position: 0 -119px;}
+.widgetfooter {background-position: 0 -80px;}
+.box {position:relative; background: transparent url(images/620px.bg.gif) top left repeat-y; padding: 5px 10px 5px 10px;}
+h2.title{margin:5px 12px; line-height:28px;font-size:18px;}
+/*- Post Excerpt - */
+.post-content, .post-excerpt{overflow: auto; padding:5px 5px 0 5px; color:#8E8D8D; text-shadow:0 1px 0 #E5E5E5; margin:0;}
+.post-content p { line-height:22px; padding: 5px; font-size:13px;}
+.post-excerpt p { line-height:18px; margin: 0; padding: 0 5px;}
+.more-link { color:#CA0002; padding:5px 0 0 0; display:table; margin: 0; font-weight:bold;}
+.post-meta{padding: 10px 11px 10px;}
+.meta1 {float: left;}
+.meta2 {float: right;}
+.post-detailed{position:absolute;right:25px;top:18px; line-height:14px;text-align:right;font-size:12px;}
+/*- Post Single - */
+.post_related{overflow: hidden;margin: 5px 0;padding: 0 0 10px 0;border-top: 1px dashed #BFBEBE;border-bottom: 1px dashed #BFBEBE;}
+.post_related h3{line-height: 30px;text-shadow: 0 1px 0 #BFBEBE;font-size: 16px;}
+.post_related_r{float:right; width:49%;}
+.post_related_l{float:left; width:49%;}
+.nav_below {overflow: hidden; padding: 0 5px;}
+.nav-previous {float: left;}
+.nav-next {float: right;}
+
+/*=== secondary ===*/
+/* # basic */
+#secondary h3,#secondary h2{text-align: center; overflow:hidden;text-transform:uppercase;color:#030303;text-shadow:0 4px 1px #b2b1b0;font-size:14px;height:32px;line-height:40px;padding-bottom:3px;font-family: 'JosefinSansRegular',"Trebuchet MS","Microsoft JhengHei","Microsoft YaHei",Helvetica, sans-serif;}
+#secondary li {line-height: 24px;}
+#secondary a {color:#587686;}
+#secondary a:hover {color: #CA0002;text-shadow: 2px 1px 0 #E5E5E5;}
+/* #tab-title */
+#secondary .widget {background: transparent url(images/325px.bg.gif) top left repeat-y;}
+#secondary #widget_tab{position:relative;padding:0 15px;height:340px;}
+#secondary #tab-title{width:300px;height:30px;padding:0;}
+#secondary #tab-content-wrap{position:relative;overflow:hidden;width:300px;height:310px;padding:0;}
+#secondary #tab-content{position:absolute;width:1500px;height:310px;padding:0; font-size:12px;}
+#tab-title span{height:22px;line-height:22px;}
+#tab-title em{float:left;cursor:pointer;font-size:15px;height:26px;line-height:26px;margin:10px 5px 0 0;padding:0 5px;font-style:normal;text-shadow:1px 1px 0 #eee;font-family: 'JosefinSansRegular',"Trebuchet MS","Microsoft JhengHei","Microsoft YaHei",Helvetica, sans-serif;}
+#tab-title em.selected,#tab-title em:hover{color:#CA0002;}
+#tab-content ul{overflow:hidden;float:left;width:300px;height:300px;padding:10px 0 10px 0;}
+#secondary .rc_comments, #secondary .rc_tag, #secondary .rc_views{list-style: none;width: 300px;}
+#secondary .rc_comments li{margin:0 0 5px 5px;line-height:16px;height:32px;overflow:hidden;}
+#secondary .rc_comments li a{overflow:hidden;display:block;height:16px;}
+#secondary .rc_comments img.avatar{width:28px;height:28px;float:left;position:relative;border:1px solid #bfbebe;margin:0 5px 0 3px;padding:1px;background:#f2f1f0;}
+#secondary .rc_info, #secondary .rc_views{color:#999;}
+
+#secondary .sideL h2, #secondary .sideR h2{border-bottom: 3px solid #DDD;font-size: 16px;font-weight: normal;line-height: 30px;color: #3B3B3B;}
+#secondary .sideL {float: left;width: 145px; padding:5px 0 10px 10px;}
+#secondary .sideR {float: right;width: 145px; padding:5px 10px 10px 0;}
+#secondary ul li.categories ul li{text-align: right;border-bottom: 1px dashed #587686;}
+#secondary ul li.categories ul li ul.children li {background-repeat: no-repeat;padding: 0 0 0 20px;background-image: url(images/icon_child.gif); border: none;}
+#secondary ul li.categories a {float: left;}
+#secondary ul.post_link li ul li{border-bottom: 1px dashed #587686;}
+#secondary .tag_cloud {padding:5px 10px; }
+#secondary .tag_cloud h2 {border-bottom: 3px solid #DDD;font-size: 16px;font-weight: normal; margin-bottom: 10px; line-height: 30px;color: #3B3B3B;}
+#secondary .tag_cloud a {background: #FAFAFA;padding: 0px 8px;margin: 0 5px 10px 5px;display: inline-block;border-radius: 5px;box-shadow: 0px 1px 1px #8E8D8D;}
+.mak-blog {color: #CA0002; padding: 10px 0 0 10px; }
+video {padding: 0 5px;}
+
+#mottowid {padding: 6px 0px 0px 0px;font-size:10px; height:113px;}
+#mottowid span {display:block; color: #999;padding: 0 15px 0 10px;}
+.tweet {float: left; cursor:pointer; padding:5px 5px 0 5px;}
+.image-pre {float: left; width:250px; display:block; margin:0; font-size:12px; line-height:16px;}
+.image-pre img{float: left; width: 30px; height: 30px;border: 1px solid #BFBEBE; margin: 0 7px 0 3px; padding: 1px; background: #FAFAFA;}
+.preview {position:absolute; display: none; z-index:2; padding: 10px;width:250px; color: black; background: #FAFAFA;}
+
+
+
+#wp-pagenavi {overflow: hidden; text-align: center; margin-top: 20px; padding: 10px; font-size:14px;}
+.page-numbers{padding: 5px 8px 4px; margin: 0 5px; background: white;}
+.current,.current:hover{color:white;background:#CA0002;}
+
+/*=== footer ===*/
+#footer {color:#8E8D8D; text-decoration:none; font-size:12px; margin:0 auto; padding:5px 0 20px 0; width: 945px;}
+.footerdiv {height: 11px; background-color: #CA0002; overflow: hidden;margin: 10px 0;}
+.cpyBot {color: #666; display: inline; float: left; font: 10px/14px "Microsoft Yahei",arial,Helvetica,Utkal,sans-serif; margin: 0;}
+#footer a { color:#CA0002; }
+
+/* ----------Fucking Comment Style------------*/
+#comments {background: transparent url(images/620px.bg.gif) top left repeat-y; padding:10px 30px;}
+.commentpart,.pingpart{float: right; padding:5px 0px 5px 10px; color:#587686}
+#comments h3 {border-bottom:1px solid #ccc; padding-bottom:5px;}
+#comments .navigation {margin-top:10px;}
+
+#comments ul li {margin: 15px 0;}
+#author_info {float:left;}
+#author_info_save {float:right; margin:20px 30px 0 0;}
+#author_info_save img {border-radius: 10em;margin-top: 3px;box-shadow: 1px 1px 2px #ccc;}
+
+.comment_list{padding:0 10px;}
+.comment-body{position: relative;font-size:12px;}
+.comment-author{float:left;height:28px;width:28px;}
+.comment-author img{padding: 1px;background: #FAFAFA;border: 1px solid #BFBEBE;}
+.name{float:left;}
+.comment-head .date{font-size:11.2px;float:right;}
+.comment-head{margin: 0 0 5px 35px;padding-top:7px;}
+.comment-entry .wp-smiley{margin-top:-2px;}
+.comment-reply-link{float:right;padding-left:20px;color:#999;}
+#comments .children{margin:10px 0 0 35px;}
+#comments .children .depth-8,.children li.depth-8 .children{margin-left:0;}
+
+#respond{background:none;}
+#respond textarea {width: 98%;padding:5px;}
+.children #respond{margin-left:26px;}
+.comment_list #respond textarea {width:95%;}
+#commentform {border-top:1px solid #f9f9f9; padding-top:10px;}
+#commentform input {width:200px; padding:5px; display:block;}
+#comments input,#comments textarea,#comments button {border-radius:3px;}
+#submit {float:left; padding:5px 15px;cursor:pointer;font-size:14px;color:#fff;text-shadow:1px 1px #111;border:1px solid #333;box-shadow:1px 1px 3px #d3d3d3;background:#444; background:-moz-linear-gradient(top, #444, #333);background:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#333));}
+#submit:hover {color:#555;text-shadow:1px 1px #fff;border:1px solid #ccc;background:#f1f1f1; background:-moz-linear-gradient(top, #fff, #f1f1f1);background:-webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#eee));}
+
+.form-allowed-tags{display:none;}
+.form-submit{margin-top:10px;}
+
+.reply {padding-bottom:10px; font-size:12px;}
+.depth-1{margin-bottom:6px;line-height:19px;}
+.comment_list li p{clear:both;margin-bottom:5px;}
+
+#commentform input#comment_mail_notify{display:inline;width:15px;}
+#comment-edit-link{display:none;}
+
+/*wp_syntax*/
+.wp_syntax{color:#100;overflow:auto;}.wp_syntax table{border-collapse:collapse;}.wp_syntax div, .wp_syntax td {vertical-align:top;padding:5px;}.wp_syntax .line_numbers {text-align:right;background-color:#F2F2F2;color:gray;overflow:visible;}.wp_syntax pre{font:12px 'Microsoft YaHei','Century Gothic',Verdana;margin:0;width:auto;float:none;clear:none;overflow:visible;word-wrap:break-word;line-height:1.5;white-space:pre;}
+
+/*Slimbox2*/
+#lbOverlay{position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background-color:#000;cursor:pointer;}
+#lbCenter, #lbBottomContainer{position:absolute;z-index: 9999;overflow: hidden;background-color:#fff;}
+.lbLoading{background:#fff url(images/loading.gif) no-repeat center;}
+#lbImage {position:absolute;left:0;top:0;border:2px solid #fff;background-repeat:no-repeat;}
+#lbPrevLink,#lbNextLink{display: block;position: absolute;top:0;width:50%;outline:none;}
+#lbPrevLink{left:0;}
+#lbPrevLink:hover{background:transparent url(images/prevlabel.gif) no-repeat 0 15%;}
+#lbNextLink{right:0;}
+#lbNextLink:hover{background:transparent url(images/nextlabel.gif) no-repeat 100% 15%;}
+#lbCaption,#lbNumber,#lbCloseLink,#lbBottom{display:none;}
