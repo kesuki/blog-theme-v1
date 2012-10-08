@@ -11,7 +11,7 @@ remove_filter('the_content','wptexturize');
 
 /*自定义表情路径*/
 function custom_smilies_src($src, $img){
-    return get_option('home') . '/wp-content/themes/themev4/images/smilies/' . $img;
+    return get_option('home') . '/wp-content/themes/mak/images/smilies/' . $img;
 }
 add_filter('smilies_src', 'custom_smilies_src', 10, 2);
 
