@@ -33,6 +33,12 @@ jQuery(document).ready(function($){
 });
 </script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+
+//baidu
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1c983a79981803c645e1f201195d0fdc' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <script type="text/javascript">
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
