@@ -25,6 +25,7 @@ if ( function_exists('wp_gzip') ) { ?><strong style="color:#94a">Gzipped</strong
 	</div>
 </div>
 
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function($){
 	if($('.post a[rel!=link]:has(img)').length > 0){
@@ -34,14 +35,12 @@ jQuery(document).ready(function($){
 </script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
 
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1c983a79981803c645e1f201195d0fdc' type='text/javascript'%3E%3C/script%3E"));
-</script>
+
+<script src="<?php bloginfo('template_url'); ?>/js/h.js" type="text/javascript"></script>
 <script type="text/javascript">
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = '<?php bloginfo('template_url'); ?>/js/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>

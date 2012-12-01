@@ -107,11 +107,12 @@ h2.title{margin:5px 12px; line-height:28px;font-size:18px;}
 #secondary .rc_comments img.avatar{width:28px;height:28px;float:left;position:relative;border:1px solid #bfbebe;margin:0 5px 0 3px;padding:1px;background:#f2f1f0;}
 #secondary .rc_info, #secondary .rc_views{color:#999;}
 
+
 #secondary .sideL h2, #secondary .sideR h2{border-bottom: 3px solid #DDD;font-size: 16px;font-weight: normal;line-height: 30px;color: #3B3B3B;}
 #secondary .sideL {float: left;width: 145px; padding:5px 0 10px 10px;}
 #secondary .sideR {float: right;width: 145px; padding:5px 10px 10px 0;}
 #secondary ul li.categories ul li{text-align: right;border-bottom: 1px dashed #587686;}
-#secondary ul li.categories ul li ul.children li {background-repeat: no-repeat;padding: 0 0 0 20px;background-image: url(images/icon_child.gif); border: none;}
+#secondary ul li.categories ul li ul.children li {background-repeat: no-repeat;padding: 0 0 0 20px; border: none;}
 #secondary ul li.categories a {float: left;}
 #secondary ul.post_link li ul li{border-bottom: 1px dashed #587686;}
 #secondary .tag_cloud {padding:5px 10px; }
@@ -119,6 +120,8 @@ h2.title{margin:5px 12px; line-height:28px;font-size:18px;}
 #secondary .tag_cloud a {background: #FAFAFA;padding: 0px 8px;margin: 0 5px 10px 5px;display: inline-block;border-radius: 5px;box-shadow: 0px 1px 1px #8E8D8D;}
 .mak-blog {color: #CA0002; padding: 10px 0 0 10px; }
 video {padding: 0 5px;}
+#secondary .adWidget{padding:10px 0 0 3px;}
+
 
 #mottowid {padding: 6px 0px 0px 0px;font-size:10px; height:113px;}
 #mottowid span {display:block; color: #999;padding: 0 15px 0 10px;}

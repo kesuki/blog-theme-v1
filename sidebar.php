@@ -94,7 +94,43 @@ File Name: sidebar.php
 			</div>
 			<div class="widgetfooter"></div>
 			
-			<?php if (is_home()) { ?>
+			<?php if (!(is_single())) { ?>
+			<div class="adWidget">
+			
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9181069877583646";
+/* 320 */
+google_ad_slot = "3476272422";
+google_ad_width = 320;
+google_ad_height = 50;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			</div>
+			<?php } ?>
+			
+			<?php if (is_single()) { 
+			if ((int)get_the_time('Y')>(int)'2011') { ?>
+			<div class="adWidget">
+			
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9181069877583646";
+/* 320 */
+google_ad_slot = "3476272422";
+google_ad_width = 320;
+google_ad_height = 50;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			</div>
+			<?php }
+			} 
+			?>
+
 			<?php
 			/*
 			<div class="widgetheader"></div>
@@ -105,15 +141,10 @@ File Name: sidebar.php
 				</video>
 			</div>
 			<div class="widgetfooter"></div>
+			
+			<a href="http://feeds2.feedburner.com/mak-blog"><img src="http://feeds.feedburner.com/~fc/mak-blog?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
 			*/
 			?>
-			<?php } ?>
-
-			<div class="mak-blog">
-				<p><a href="http://feed.feedsky.com/mak-blog"><img src="http://img.feedsky.com/feed/mak-blog/sc/gif" height="26" width="88" style="border:0" alt="" /></a>
-				<a href="http://feeds2.feedburner.com/mak-blog"><img src="http://feeds.feedburner.com/~fc/mak-blog?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a></p>
-			</div>
-			
 			<div class="mak-blog">
 				<strong><?php mak_blog(); ?></strong>
 			</div>

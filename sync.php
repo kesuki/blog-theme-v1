@@ -30,7 +30,7 @@ File Name: sync.php
 		$wor = $wor .'<p class="right" target="_blank" title="Twitter">Twitter</p>';
 		$wor = $wor .'<div class="clear"></div>';
 		$wor = $wor .'<a class="tweet" title="Click to see next tweet">'. $temp . '</a>';
-		$wor = $wor .'<a class="preview" >'. '简介：' . $doc . '</a>';
+		//$wor = $wor .'<a class="preview" >'. '简介：' . $doc . '</a>';
 		$wor = $wor .'</span>';
 	}
 	
